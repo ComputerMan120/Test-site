@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta description="This is for the tables">
+    <title>Intermediate HTML</title>
+    </head>
+
+<body>
+    <center>
+    <table border="20" cellspacing="20">
+        <tr>
+            <td><img src="DOST.png" alt="DOST logo" height="200" width="200"></td>
+            <td>
+            <table border="5"><!--try not to use "border" or any other element. You can use CSS-->
+                <thead><!--You can opt to not use <thead> & <tbody>, these elements are used for isolation of a certain part of the table.-->
+                    <th colspan="2">Department of Science and Technology</th>
+                    <tr><!--Table Row <tr> creates a row to fill in some shit. Note: THERE ARE NO TABLE COLUMNS <tc>-->
+                        <th>DOST Councils</th><!--Create Tble Heding <th> to make a heading for your table-->
+                        <th>Full Names</th>
+                    </tr>
+                </thead>
+                <tbody><!--See table head-->
+                <tr>
+                    <td>PCARRD</td><!--Table Dat <td> is basically the cell and content for the table. Creating another <td> makes another cell on the next row-->
+                    <td> Philippine Council for Agriculture, Forestry and Natural Resources Research
+                        and Development</td>
+                </tr>
+                <tr>
+                    <td>PCAMRD</td>
+                    <td>Philippine Council for Aquatic and Marine Research and Development</td>
+                </tr>
+                <tr>
+                    <td>PCIERD</td>
+                    <td>Philippine Council for Industry and Energy Research and Development</td>
+                </tr>
+                <tr>
+                    <td>PCHRD</td>
+                    <td>Philippine Council for Health Research and Development</td>
+                </tr>
+                <tr>
+                    <td>PCASTRD</td>
+                    <td>Philippine Council for Advanced Science and Technology Research
+                        and Development</td>
+                </tr>
+                <tr>
+                    <td>NRCP</td>
+                    <td>National Research Council of the Philippines</td>
+                </tr>
+                </tbody>
+            </table>
+            </td>
+        </tr>
+            
+    </table>
+    </center>
+    
+<br>
+<br>
+<br>
+<table cellspacing="20">
+    <thead>
+        <th colspan="4">
+            <emp>Skills</emp>
+        </th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Mathematics</td>
+            <td> ★ ★ ★ ★</td>
+            <td>Filipino</td>
+            <td> ★ ★</td>
+        </tr>
+        <tr>
+            <td>Science (Physics)</td>
+            <td> ★ ★ ★</td>
+        </tr>
+        <tr>
+            <td>English</td>
+            <td> ★ ★ ★ ★ ★</td>
+        </tr>
+    </tbody>
+</table>
+<br>
+<h3>Wanna die? Type your name here!</h3>
+<form action="mailto: francissilao333@gmail.com" method="POST" autocomplete="on" enctype="text/plain"><!--Requires JavaScript--><!--Research further on MDN pls esp. input types-->
+    <label for="Email">Email</label>
+    <input type="email" name="Email" value=""><br>                  <!--Only ALLOWS email client to send mail, not actually SEND it-->
+    <label for="Age">Age:</label>
+    <input type="text"><br>
+    <input type="submit">
+    <div>
+    <label for="How big dat dick">How big dat dick</label>
+    <input type="range" min="0" max="100" step="0.01" list="tickmarks" >
+    <datalist id="tickmarks"><!--For the tickmarks to work, u have 2 use CSS as Firefox etc. doesn't support these and for Chrome it's invisible since display property is set to "none"-->
+    <option value="0" label="0%"></option>    
+    <option value="10"></option>
+    <option value="20"></option>
+    <option value="30"></option>
+    <option value="40"></option>
+    <option value="50" label="5%"></option>
+    <option value="60"></option>
+    <option value="70"></option>
+    <option value="80"></option>
+    <option value="90"></option>
+    <option value="100" label="10%"></option>
+    </datalist>
+    </div>
+</form>
+<br>
+<br>
+<form action="Jojo's Dialogue.html">
+    <input type="date" name="Calendar" id="Calendar">
+</form>
+<br>
+<br>
+<br>
+<p><h1>Answer this survey:</h1></p>
+<div>
+    <input type="checkbox" id="Why r u gae?">
+    <label for="Why r u gae?">Why r u gae?</label>
+</div>
+<textarea name="Write ur reason" id="" cols="30" rows="10"></textarea>    
+<br>
+<br>
+<center><a href="Jojo's Dialogue.html"><h1>Click here to go home!</h1></a></center>
+<a href="Jojo's Dialogue.html"><button>Click here!</button></a><!--This is a button, may come in handy.-->
+</body>
+
+</html>
